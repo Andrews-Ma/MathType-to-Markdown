@@ -9,9 +9,9 @@
 
 **Typora 用户的 MathType 公式救星**  
 
-   一键清洗 LaTeX + 批量还原 EPS 为可编辑 Markdown 公式
+一键清洗 LaTeX + 批量还原 EPS 为可编辑 Markdown 公式
 
-   让学术写作、论文笔记、博客创作中的公式转换不再痛苦！
+让学术写作、论文笔记、博客创作中的公式转换不再痛苦！
 
 ## ✨ 核心功能
 
@@ -52,7 +52,7 @@ pip install -r requirements.txt
 
 **批量转换 EPS**：
 
-   在终端（Command Prompt / Terminal）中运行以下命令：
+在终端（Command Prompt / Terminal）中运行以下命令：
 
 ```bash
 python mathflow_v1_batch_eps.py --folder "你的EPS文件夹路径"
@@ -74,8 +74,8 @@ python mathflow_v1_batch_eps.py --folder "你的EPS文件夹路径"
 
 ## 🤝 贡献
 
-   欢迎提交 Issue 和 Pull Request！ 觉得好用请点个 **Star** ⭐ 支持持续更新～
+欢迎提交 Issue 和 Pull Request！ 觉得好用请点个 **Star** ⭐ 支持持续更新～
 
 ------
 
-   **MathFlow** —— 让公式在 Typora 中丝滑流畅！ Made with ❤️ for Typora & Academic Writers
+**MathFlow** —— 让公式在 Typora 中丝滑流畅！ Made with ❤️ for Typora & Academic Writers
