@@ -1,3 +1,9 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Andrews-Ma/MathType-to-Markdown/blob/main/LICENSE)
+[![Python](https://img.shields.io/badge/python-3.9+-3776AB.svg?logo=python&logoColor=white)](https://www.python.org/)
+[![Stars](https://img.shields.io/github/stars/Andrews-Ma/MathType-to-Markdown?style=social)](https://github.com/Andrews-Ma/MathType-to-Markdown/stargazers)
+[![Forks](https://img.shields.io/github/forks/Andrews-Ma/MathType-to-Markdown?style=social)](https://github.com/Andrews-Ma/MathType-to-Markdown/network/members)
+[![Issues](https://img.shields.io/github/issues/Andrews-Ma/MathType-to-Markdown)](https://github.com/Andrews-Ma/MathType-to-Markdown/issues)
+[![Last Commit](https://img.shields.io/github/last-commit/Andrews-Ma/MathType-to-Markdown)](https://github.com/Andrews-Ma/MathType-to-Markdown/commits/main)
 # MathFlow (v1)
 
 **MathFlow** 是一个用于优化 MathType 公式到 Markdown (Typora) 转换体验的自动化工具包。
