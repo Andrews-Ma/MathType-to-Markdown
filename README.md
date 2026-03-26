@@ -1,34 +1,45 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Andrews-Ma/MathType-to-Markdown/blob/main/LICENSE)
-[![Python](https://img.shields.io/badge/python-3.9+-3776AB.svg?logo=python&logoColor=white)](https://www.python.org/)
-[![Stars](https://img.shields.io/github/stars/Andrews-Ma/MathType-to-Markdown?style=social)](https://github.com/Andrews-Ma/MathType-to-Markdown/stargazers)
-[![Forks](https://img.shields.io/github/forks/Andrews-Ma/MathType-to-Markdown?style=social)](https://github.com/Andrews-Ma/MathType-to-Markdown/network/members)
-[![Issues](https://img.shields.io/github/issues/Andrews-Ma/MathType-to-Markdown)](https://github.com/Andrews-Ma/MathType-to-Markdown/issues)
-[![Last Commit](https://img.shields.io/github/last-commit/Andrews-Ma/MathType-to-Markdown)](https://github.com/Andrews-Ma/MathType-to-Markdown/commits/main)
-[<image-card alt="Made for Typora" src="https://img.shields.io/badge/Made%20for-Typora-9C1A6A.svg" ></image-card>](https://typora.io/)
-[<image-card alt="PyPI version" src="https://img.shields.io/pypi/v/mathtype-to-markdown" ></image-card>](https://pypi.org/project/mathtype-to-markdown/)
-# MathFlow (v1)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://github.com/Andrews-Ma/MathType-to-Markdown/blob/main/LICENSE.txt)
+[![Python](https://img.shields.io/badge/Python-3.9+-3776AB.svg?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/)
+[![Stars](https://img.shields.io/github/stars/Andrews-Ma/MathType-to-Markdown?style=for-the-badge&logo=github&logoColor=white&label=Stars)](https://github.com/Andrews-Ma/MathType-to-Markdown/stargazers)
+[![Forks](https://img.shields.io/github/forks/Andrews-Ma/MathType-to-Markdown?style=for-the-badge&logo=github&logoColor=white&label=Forks)](https://github.com/Andrews-Ma/MathType-to-Markdown/network/members)
+[![Issues](https://img.shields.io/github/issues/Andrews-Ma/MathType-to-Markdown?style=for-the-badge&logo=github&logoColor=white&label=Issues)](https://github.com/Andrews-Ma/MathType-to-Markdown/issues)
+[![Last Commit](https://img.shields.io/github/last-commit/Andrews-Ma/MathType-to-Markdown?style=for-the-badge&logo=github&logoColor=white&label=Last%20Commit)](https://github.com/Andrews-Ma/MathType-to-Markdown/commits/main)
 
-**MathFlow** 是一个用于优化 MathType 公式到 Markdown (Typora) 转换体验的自动化工具包。
+# MathFlow
 
-## 🛠️ 脚本功能差异说明
+**Typora 用户的 MathType 公式救星**  
+一键清洗 LaTeX + 批量还原 EPS 为可编辑 Markdown 公式
 
-本项目包含两个独立功能的 Python 脚本，请根据您的需求选择运行：
+让学术写作、论文笔记、博客创作中的公式转换不再痛苦！
 
-### 1. `mathflow_v1_hotkey.py` (剪贴板即时转换)
-- **适用场景**：边写文档边转换。
-- **功能**：监听全局快捷键 `Ctrl + Alt + V`。当你在 MathType 中复制公式后，按下快捷键，脚本会自动清洗 LaTeX 源码中的冗余标签、还原中文字符、并注入 `matrix` 环境以确保 Typora 渲染不重叠，最后将处理好的结果写回剪贴板。
-- **特点**：无需保存文件，即复制即转换。
+## ✨ 核心功能
 
-### 2. `mathflow_v1_batch_eps.py` (EPS 批量转换工具)
-- **适用场景**：处理包含大量旧公式图片的文件夹。
-- **功能**：通过命令行扫描指定文件夹下的所有 `.eps` 文件，解析其内嵌的 MathML 数据，并自动生成对应的 `.md` 公式文件。
-- **特点**：支持批量处理，解决了 EPS 格式的文件内容无法直接复制到 Tyopra 的难题。
+- **实时快捷键转换**（`mathflow_v1_hotkey.py`）  
+  在 MathType 中复制公式后，按 **Ctrl + Alt + V** 即可自动清洗 LaTeX 源码（去除冗余标签、还原中文字符、注入 `matrix` 环境），直接粘贴到 Typora 中完美显示。
 
----
+- **EPS 批量转换**（`mathflow_v1_batch_eps.py`）  
+  扫描指定文件夹中的所有 `.eps` 文件，自动提取 MathML 并生成对应的 `.md` 可编辑公式文件，彻底解决旧公式图片无法直接使用的难题。
+
+- **纯 Python 实现**，轻量、无需复杂环境，专为 Typora 用户优化。
+
+## 🎥 演示（建议在此处添加 GIF）
+
+**实时快捷键演示**  
+![Hotkey Demo](assets/hotkey-demo.gif)
+
+**EPS 批量转换演示**  
+![Batch Demo](assets/batch-demo.gif)
+
+> **提示**：请在 `assets/` 文件夹中放入对应的 GIF 文件，效果会非常直观。
 
 ## 🚀 快速开始
 
-### 环境配置 (Miniconda/Python)
-在终端中进入项目目录，执行：
+### 1. 环境准备
+
 ```bash
+# 克隆仓库
+git clone https://github.com/Andrews-Ma/MathType-to-Markdown.git
+cd MathType-to-Markdown
+
+# 安装依赖（推荐使用 Miniconda 或虚拟环境）
 pip install -r requirements.txt
