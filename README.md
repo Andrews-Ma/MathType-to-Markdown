@@ -47,6 +47,7 @@
 3. 用**管理员权限**打开你当前使用的翻译器文件（例如 `AMS LaTeX.tdl`、`AMSTeX.tdl` 等），在文件**第一行之后**添加一行：
    ```tdl
    include "zh_CN(chars).tdl";
+   ```
 
 ## 🎥 演示
 
