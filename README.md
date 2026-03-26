@@ -37,3 +37,35 @@
 git clone https://github.com/Andrews-Ma/MathType-to-Markdown.git
 cd MathType-to-Markdown
 pip install -r requirements.txt
+
+### 2. 使用方法
+实时转换（日常推荐）：
+
+运行 python mathflow_v1_hotkey.py
+在 MathType 复制公式
+按 Ctrl + Alt + V
+在 Typora 直接粘贴即可
+
+批量转换 EPS：
+Bashpython mathflow_v1_batch_eps.py --folder "你的EPS文件夹路径"
+
+### 🛠️ 项目特点
+
+智能清理 MathType 冗余标签
+完美支持中文字符
+自动注入 matrix 环境防止公式重叠
+完全开源（MIT License）
+
+### 📌 Roadmap
+
+ 打包成 pip 安装工具（pip install mathtype-to-markdown）
+ 支持自定义快捷键
+ 提供图形界面（GUI）
+ Typora 插件集成
+
+### 🤝 贡献
+欢迎提交 Issue 和 Pull Request！
+觉得好用请点个 Star ⭐ 支持持续更新～
+
+MathFlow —— 让公式在 Typora 中丝滑流畅！
+Made with ❤️ for Typora & Academic Writers
