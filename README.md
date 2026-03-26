@@ -23,6 +23,31 @@
 
 - **纯 Python 实现**，轻量、无需复杂环境，专为 Typora 用户深度优化。
 
+## 🔧 MathType 中文支持说明
+
+本项目主要解决 MathType 复制公式时**中文字符容易报错或无法正常显示**的常见痛点。
+
+### 两个脚本的依赖区别
+
+- **`mathflow_v1_hotkey.py`**（实时快捷键转换脚本）  
+  需要依赖 MathType 软件，必须安装 **zh_CN(chars).tdl** 中文字符支持包才能正常处理包含中文的公式。
+
+- **`mathflow_v1_batch_eps.py`**（EPS 批量转换脚本）  
+  **无需安装 MathType**，也不需要 `zh_CN(chars).tdl` 支持包，可完全独立运行。
+
+### 中文支持包安装方法（仅实时快捷键转换脚本需要）
+
+中文字符支持包 `zh_CN(chars).tdl` 可从以下项目下载：
+
+→ https://github.com/iroben/mathtype-zh_CN.tdl
+
+**安装步骤**（Windows）：
+1. 下载 `zh_CN(chars).tdl` 文件。
+2. 将其复制到 MathType 安装目录下的 `Translators` 文件夹（默认路径：`C:\Program Files\MathType\Translators`）。
+3. 用**管理员权限**打开你当前使用的翻译器文件（例如 `AMS LaTeX.tdl`、`AMSTeX.tdl` 等），在文件**第一行之后**添加一行：
+   ```tdl
+   include "zh_CN(chars).tdl";
+
 ## 🎥 演示
 
 **实时快捷键清洗 LaTeX（Ctrl + Alt + V）**  
