@@ -228,7 +228,23 @@ def _node_to_latex(node):
     ch = list(node)
 
     if tag in ('math', 'mtd', 'mrow', 'mstyle', 'mpadded', 'mphantom'):
-        return ''.join(_node_to_latex(c) for c in ch)
+        # Bug2修复：相邻 <mi> 中，希腊字母命令（\rho等）后紧跟普通字母时加空格
+        # 否则 \rho + c → \rhoc，LaTeX 会把它当作未知命令
+        parts = []
+        for i, c in enumerate(ch):
+            part = _node_to_latex(c)
+            if i + 1 < len(ch):
+                ctag = c.tag.replace(f'{{{MML_NS}}}', '')
+                ntag = ch[i+1].tag.replace(f'{{{MML_NS}}}', '')
+                ctext = (c.text or '').strip()
+                ntext = (ch[i+1].text or '').strip()
+                c_is_greek = ctag == 'mi' and ctext in GREEK
+                n_is_plain  = ntag == 'mi' and ntext not in GREEK
+                # 只在希腊字母后跟普通字母时补空格
+                if c_is_greek and n_is_plain:
+                    part = part + ' '
+            parts.append(part)
+        return ''.join(parts)
     if tag == 'mtr':
         return ''.join(_node_to_latex(c) for c in ch)
     if tag == 'mtable':
@@ -282,6 +298,16 @@ def _node_to_latex(node):
         return f'\\sqrt{{{" ".join(_node_to_latex(c) for c in ch)}}}'
     if tag == 'mroot':
         return f'\\sqrt[{_node_to_latex(ch[1])}]{{{_node_to_latex(ch[0])}}}'
+    if tag == 'munderover':
+        # Bug1修复：munderover 有三个子节点：base、下限、上限
+        base  = _node_to_latex(ch[0])
+        under = _node_to_latex(ch[1])
+        over  = _node_to_latex(ch[2])
+        # 积分号特殊处理为 \int_{下}^{上}
+        if base == '\\int' or (ch[0].text or '').strip() == '\u222b':
+            return f'\\int_{{{under}}}^{{{over}}}'
+        return f'\\overset{{{over}}}{{\\underset{{{under}}}{{{base}}}}}'
+
     if tag == 'mover':
         acc = _node_to_latex(ch[1])
         cmd = ACC_MAP.get(acc, f'\\overset{{{acc}}}')
@@ -295,10 +321,15 @@ def _node_to_latex(node):
             return GREEK[text]
         if text and all('\u4e00' <= c <= '\u9fff' or c in '，。：；！？、：' for c in text):
             return f'\\text{{{text}}}'
+        # 多字母 mi（如 cos sin arcsin ln）→ 加反斜杠变为 LaTeX 命令
+        if len(text) > 1 and text.isalpha():
+            return f'\\{text}'
         return text
     if tag == 'mn':
         return text
     if tag == 'mo':
+        if (text or '').strip() == '\u222b':
+            return '\\int'
         return OP_MAP.get(text, text)
     return ''.join(_node_to_latex(c) for c in ch) or text
 
