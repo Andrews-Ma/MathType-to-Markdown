@@ -8,17 +8,18 @@
 # MathFlow
 
 **Typora 用户的 MathType 公式救星**  
-一键清洗 LaTeX + 批量还原 EPS 为可编辑 Markdown 公式
 
-让学术写作、论文笔记、博客创作中的公式转换不再痛苦！
+   一键清洗 LaTeX + 批量还原 EPS 为可编辑 Markdown 公式
+
+   让学术写作、论文笔记、博客创作中的公式转换不再痛苦！
 
 ## ✨ 核心功能
 
 - **实时快捷键转换**（`mathflow_v1_hotkey.py`）  
-  在 MathType 中复制公式后，按 **Ctrl + Alt + V** 即可自动清洗 LaTeX 源码（去除冗余标签、还原中文字符、注入 `matrix` 环境），直接粘贴到 Typora 中完美显示。
+   在 MathType 中复制公式后，按 **Ctrl + Alt + V** 即可自动清洗 LaTeX 源码（去除冗余标签、还原中文字符、注入 `matrix` 环境），直接粘贴到 Typora 中完美显示。
 
 - **EPS 批量转换**（`mathflow_v1_batch_eps.py`）  
-  自动扫描文件夹中的所有 `.eps` 文件，提取 MathML 并生成可编辑 Markdown 公式，彻底解决旧公式无法编辑的问题。
+   自动扫描文件夹中的所有 `.eps` 文件，提取 MathML 并生成可编辑 Markdown 公式，彻底解决旧公式无法编辑的问题。
 
 - **纯 Python 实现**，轻量、无需复杂环境，专为 Typora 用户深度优化。
 
@@ -51,7 +52,7 @@ pip install -r requirements.txt
 
 **批量转换 EPS**：
 
-在终端（Command Prompt / Terminal）中运行以下命令：
+   在终端（Command Prompt / Terminal）中运行以下命令：
 
 ```bash
 python mathflow_v1_batch_eps.py --folder "你的EPS文件夹路径"
@@ -73,8 +74,8 @@ python mathflow_v1_batch_eps.py --folder "你的EPS文件夹路径"
 
 ## 🤝 贡献
 
-欢迎提交 Issue 和 Pull Request！ 觉得好用请点个 **Star** ⭐ 支持持续更新～
+   欢迎提交 Issue 和 Pull Request！ 觉得好用请点个 **Star** ⭐ 支持持续更新～
 
 ------
 
-**MathFlow** —— 让公式在 Typora 中丝滑流畅！ Made with ❤️ for Typora & Academic Writers
+   **MathFlow** —— 让公式在 Typora 中丝滑流畅！ Made with ❤️ for Typora & Academic Writers
