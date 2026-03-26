@@ -1,16 +1,9 @@
-### **已修复的完整 README.md（直接复制覆盖）**
-
-请**全部选中下面内容**，覆盖你仓库里的 README.md 文件（在 GitHub 网页上编辑 → 粘贴 → Commit changes）：
-
-Markdown
-
-```
-[<image-card alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic" ></image-card>](https://github.com/Andrews-Ma/MathType-to-Markdown/blob/main/LICENSE.txt)
-[<image-card alt="Python" src="https://img.shields.io/badge/Python-3.9+-3776AB.svg?style=plastic&logo=python&logoColor=ffdd54" ></image-card>](https://www.python.org/)
-[<image-card alt="Stars" src="https://img.shields.io/github/stars/Andrews-Ma/MathType-to-Markdown?style=plastic&logo=github&logoColor=white&label=Stars" ></image-card>](https://github.com/Andrews-Ma/MathType-to-Markdown/stargazers)
-[<image-card alt="Forks" src="https://img.shields.io/github/forks/Andrews-Ma/MathType-to-Markdown?style=plastic&logo=github&logoColor=white&label=Forks" ></image-card>](https://github.com/Andrews-Ma/MathType-to-Markdown/network/members)
-[<image-card alt="Issues" src="https://img.shields.io/github/issues/Andrews-Ma/MathType-to-Markdown?style=plastic&logo=github&logoColor=white&label=Issues" ></image-card>](https://github.com/Andrews-Ma/MathType-to-Markdown/issues)
-[<image-card alt="Last Commit" src="https://img.shields.io/github/last-commit/Andrews-Ma/MathType-to-Markdown?style=plastic&logo=github&logoColor=white&label=Last%20Commit" ></image-card>](https://github.com/Andrews-Ma/MathType-to-Markdown/commits/main)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic)](https://github.com/Andrews-Ma/MathType-to-Markdown/blob/main/LICENSE.txt)
+[![Python](https://img.shields.io/badge/Python-3.9+-3776AB.svg?style=plastic&logo=python&logoColor=ffdd54)](https://www.python.org/)
+[![Stars](https://img.shields.io/github/stars/Andrews-Ma/MathType-to-Markdown?style=plastic&logo=github&logoColor=white&label=Stars)](https://github.com/Andrews-Ma/MathType-to-Markdown/stargazers)
+[![Forks](https://img.shields.io/github/forks/Andrews-Ma/MathType-to-Markdown?style=plastic&logo=github&logoColor=white&label=Forks)](https://github.com/Andrews-Ma/MathType-to-Markdown/network/members)
+[![Issues](https://img.shields.io/github/issues/Andrews-Ma/MathType-to-Markdown?style=plastic&logo=github&logoColor=white&label=Issues)](https://github.com/Andrews-Ma/MathType-to-Markdown/issues)
+[![Last Commit](https://img.shields.io/github/last-commit/Andrews-Ma/MathType-to-Markdown?style=plastic&logo=github&logoColor=white&label=Last%20Commit)](https://github.com/Andrews-Ma/MathType-to-Markdown/commits/main)
 
 # MathFlow
 
@@ -32,14 +25,15 @@ Markdown
 ## 🎥 演示
 
 **实时快捷键清洗 LaTeX（Ctrl + Alt + V）**  
-<image-card alt="Hotkey Demo" src="assets/hotkey-demo.gif" ></image-card>
+![Hotkey Demo](assets/hotkey-demo.gif)
 
 **EPS 文件批量转换为可编辑 Markdown 公式**  
-<image-card alt="Batch Demo" src="assets/batch-demo.gif" ></image-card>
+![Batch Demo](assets/batch-demo.gif)
 
 ## 🚀 快速开始
 
 ### 1. 环境准备
+
 ```bash
 git clone https://github.com/Andrews-Ma/MathType-to-Markdown.git
 cd MathType-to-Markdown
