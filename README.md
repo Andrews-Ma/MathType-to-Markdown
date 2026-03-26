@@ -1,4 +1,11 @@
-Markdown[<image-card alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic" ></image-card>](https://github.com/Andrews-Ma/MathType-to-Markdown/blob/main/LICENSE.txt)
+### **已修复的完整 README.md（直接复制覆盖）**
+
+请**全部选中下面内容**，覆盖你仓库里的 README.md 文件（在 GitHub 网页上编辑 → 粘贴 → Commit changes）：
+
+Markdown
+
+```
+[<image-card alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic" ></image-card>](https://github.com/Andrews-Ma/MathType-to-Markdown/blob/main/LICENSE.txt)
 [<image-card alt="Python" src="https://img.shields.io/badge/Python-3.9+-3776AB.svg?style=plastic&logo=python&logoColor=ffdd54" ></image-card>](https://www.python.org/)
 [<image-card alt="Stars" src="https://img.shields.io/github/stars/Andrews-Ma/MathType-to-Markdown?style=plastic&logo=github&logoColor=white&label=Stars" ></image-card>](https://github.com/Andrews-Ma/MathType-to-Markdown/stargazers)
 [<image-card alt="Forks" src="https://img.shields.io/github/forks/Andrews-Ma/MathType-to-Markdown?style=plastic&logo=github&logoColor=white&label=Forks" ></image-card>](https://github.com/Andrews-Ma/MathType-to-Markdown/network/members)
@@ -37,33 +44,43 @@ Markdown[<image-card alt="License: MIT" src="https://img.shields.io/badge/Licens
 git clone https://github.com/Andrews-Ma/MathType-to-Markdown.git
 cd MathType-to-Markdown
 pip install -r requirements.txt
-2. 使用方法
-实时转换（日常推荐）：
+```
 
-运行 python mathflow_v1_hotkey.py
-在 MathType 中复制公式
-按 Ctrl + Alt + V
-在 Typora 中直接粘贴即可
+### 2. 使用方法
 
-批量转换 EPS：
-Bashpython mathflow_v1_batch_eps.py --folder "你的EPS文件夹路径"
-🛠️ 项目特点
+**实时转换（日常推荐）**：
 
-智能清理 MathType 冗余标签
-完美支持中文字符
-自动注入 matrix 环境防止公式重叠
-完全开源（MIT License）
+1. 运行 python mathflow_v1_hotkey.py
+2. 在 MathType 中复制公式
+3. 按 **Ctrl + Alt + V**
+4. 在 Typora 中直接粘贴即可
 
-📌 Roadmap
+**批量转换 EPS**：
 
- 打包成 pip 安装工具（pip install mathtype-to-markdown）
- 支持自定义快捷键
- 提供图形界面（GUI）
- Typora 插件集成
+Bash
 
-🤝 贡献
-欢迎提交 Issue 和 Pull Request！
-觉得好用请点个 Star ⭐ 支持持续更新～
+```
+python mathflow_v1_batch_eps.py --folder "你的EPS文件夹路径"
+```
 
-MathFlow —— 让公式在 Typora 中丝滑流畅！
-Made with ❤️ for Typora & Academic Writers
+## 🛠️ 项目特点
+
+- 智能清理 MathType 冗余标签
+- 完美支持中文字符
+- 自动注入 matrix 环境防止公式重叠
+- 完全开源（MIT License）
+
+## 📌 Roadmap
+
+-  打包成 pip 安装工具（pip install mathtype-to-markdown）
+-  支持自定义快捷键
+-  提供图形界面（GUI）
+-  Typora 插件集成
+
+## 🤝 贡献
+
+欢迎提交 Issue 和 Pull Request！ 觉得好用请点个 **Star** ⭐ 支持持续更新～
+
+------
+
+**MathFlow** —— 让公式在 Typora 中丝滑流畅！ Made with ❤️ for Typora & Academic Writers
