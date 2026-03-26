@@ -51,9 +51,9 @@ pip install -r requirements.txt
 
 **批量转换 EPS**：
 
-Bash
+在终端（Command Prompt / Terminal）中运行以下命令：
 
-```
+```bash
 python mathflow_v1_batch_eps.py --folder "你的EPS文件夹路径"
 ```
 
